@@ -1,0 +1,8 @@
+graft src
+graft tests
+
+include pytest.ini
+include .coveragerc
+
+include README.rst
+include LICENSE.txt
