@@ -15,7 +15,7 @@ Saudi Arabian ID Validator
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/saudi-id-validator
 
-.. |version| image:: https://img.shields.io/pypi/v/saidvalidator.svg
+.. |version| image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/saudi-id-validator
 
@@ -55,3 +55,9 @@ License
 
 This package is distributed under an MIT licence. See ``LICENSE.rst`` file.
 
+Change Log
+----------
+
+**1.0.0 (2018-11-18)**
+
+- First release.
