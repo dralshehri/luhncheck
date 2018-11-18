@@ -3,11 +3,11 @@ Saudi Arabian ID Validator
 
 |travis| |codecov| |supported-versions| |version|
 
-.. |travis| image:: https://travis-ci.org/dralshehri/sa-id-validator.svg?branch=master
+.. |travis| image:: https://travis-ci.org/dralshehri/saudi-id-validator.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/dralshehri/saudi-id-validator
 
-.. |codecov| image:: https://codecov.io/github/dralshehri/sa-id-validator/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/github/dralshehri/saudi-id-validator/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/dralshehri/saudi-id-validator
 
@@ -57,6 +57,10 @@ This package is distributed under an MIT licence. See ``LICENSE.rst`` file.
 
 Change Log
 ----------
+
+**1.0.1 (2018-11-18)**
+
+- Fixed some typos in README file.
 
 **1.0.0 (2018-11-18)**
 
