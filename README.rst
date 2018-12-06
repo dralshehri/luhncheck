@@ -1,5 +1,5 @@
-Saudi Arabian ID Validator
-==========================
+Saudi ID Validator
+==================
 
 A Python package to validate ID numbers of Saudi Arabian identity cards for
 both citizens and residents.
