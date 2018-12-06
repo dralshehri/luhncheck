@@ -58,6 +58,10 @@ This package is distributed under an MIT licence. See ``LICENSE.rst`` file.
 Change Log
 ----------
 
+**1.0.2 (2018-11-18)**
+
+- Improved README content.
+
 **1.0.1 (2018-12-06)**
 
 - Fixed some typos in README file.
