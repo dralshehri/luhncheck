@@ -10,9 +10,9 @@ both citizens and residents.
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/dralshehri/saudi-id-validator
 
-.. |codecov| image:: https://codecov.io/github/dralshehri/saudi-id-validator/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/gh/dralshehri/saudi-id-validator/branch/master/graph/badge.svg
     :alt: Coverage Status
-    :target: https://codecov.io/github/dralshehri/saudi-id-validator
+    :target: https://codecov.io/gh/dralshehri/saudi-id-validator
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
     :alt: Supported versions
@@ -58,7 +58,7 @@ This package is distributed under an MIT licence. See ``LICENSE.rst`` file.
 Change Log
 ----------
 
-**1.0.1 (2018-11-18)**
+**1.0.1 (2018-12-06)**
 
 - Fixed some typos in README file.
 
