@@ -1,6 +1,9 @@
 Saudi Arabian ID Validator
 ==========================
 
+A Python package to validate ID numbers of Saudi Arabian identity cards for
+both citizens and residents.
+
 |travis| |codecov| |supported-versions| |version|
 
 .. |travis| image:: https://travis-ci.org/dralshehri/saudi-id-validator.svg?branch=master
@@ -18,9 +21,6 @@ Saudi Arabian ID Validator
 .. |version| image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/saudi-id-validator
-
-A Python package to validate ID numbers of Saudi Arabian identity cards for
-both citizens and residents.
 
 The validation formula is based on `Luhn algorithm`_ which is in wide use
 today by many governments to distinguish valid numbers from mistyped or
