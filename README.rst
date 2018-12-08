@@ -4,15 +4,15 @@ Saudi ID Validator
 A Python package to validate ID numbers of Saudi Arabian identity cards for
 both citizens and residents.
 
-|travis| |codecov| |supported-versions| |version|
+|travis| |coverage| |supported-versions| |version|
 
 .. |travis| image:: https://travis-ci.org/dralshehri/saudi-id-validator.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/dralshehri/saudi-id-validator
 
-.. |codecov| image:: https://codecov.io/gh/dralshehri/saudi-id-validator/branch/master/graph/badge.svg
+.. |coverage| image:: https://coveralls.io/repos/github/dralshehri/saudi-id-validator/badge.svg?branch=master
     :alt: Coverage Status
-    :target: https://codecov.io/gh/dralshehri/saudi-id-validator
+    :target: https://coveralls.io/github/dralshehri/saudi-id-validator?branch=master
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
     :alt: Supported versions
