@@ -7,7 +7,7 @@ python:
 - '3.7'
 install:
 - pip install -q -e .
-- pip install -q pytest pytest-cov coveralls
+- pip install -q pytest-cov codecov
 script: pytest --cov
 after_success:
-- coveralls
+- codecov
