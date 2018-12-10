@@ -1,6 +1,10 @@
 Saudi ID Validator
 ==================
 
+.. image:: https://api.codacy.com/project/badge/Grade/10f7942b65964b0180da7c4a25c9bfdc
+   :alt: Codacy Badge
+   :target: https://app.codacy.com/app/dralshehri/saudi-id-validator?utm_source=github.com&utm_medium=referral&utm_content=dralshehri/saudi-id-validator&utm_campaign=Badge_Grade_Settings
+
 A Python package to validate ID numbers of Saudi Arabian identity cards for
 both citizens and residents.
 
