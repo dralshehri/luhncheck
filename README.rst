@@ -7,20 +7,20 @@ both citizens and residents.
 |travis| |codecov| |supported| |version| |license|
 
 .. |travis| image:: https://img.shields.io/travis/dralshehri/saudi-id-validator.svg
-    :alt: Build Status
-    :target: https://travis-ci.org/dralshehri/saudi-id-validator
+   :alt: Build Status
+   :target: https://travis-ci.org/dralshehri/saudi-id-validator
 
 .. |codecov| image:: https://img.shields.io/codecov/c/github/dralshehri/saudi-id-validator.svg
-    :alt: Coverage Status
-    :target: https://codecov.io/github/dralshehri/saudi-id-validator
+   :alt: Coverage Status
+   :target: https://codecov.io/github/dralshehri/saudi-id-validator
 
 .. |supported| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
-    :alt: Supported versions
-    :target: https://pypi.python.org/pypi/saudi-id-validator
+   :alt: Supported versions
+   :target: https://pypi.python.org/pypi/saudi-id-validator
 
 .. |version| image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
-    :alt: PyPI Package version
-    :target: https://pypi.python.org/pypi/saudi-id-validator
+   :alt: PyPI Package version
+   :target: https://pypi.python.org/pypi/saudi-id-validator
 
 .. |license|
    image:: https://img.shields.io/github/license/dralshehri/saudi-id-validator.svg
@@ -65,6 +65,12 @@ This package is distributed under an MIT licence. See `LICENSE`_ file.
 
 Change Log
 ----------
+
+**1.0.3 (2019-05-22)**
+
+- Updated usage example.
+- Updated README badges.
+- Removed LICENSE file extension.
 
 **1.0.2 (2018-11-18)**
 
