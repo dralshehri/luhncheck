@@ -4,23 +4,28 @@ Saudi ID Validator
 A Python package to validate ID numbers of Saudi Arabian identity cards for
 both citizens and residents.
 
-|travis| |codecov| |supported-versions| |version|
+|travis| |codecov| |supported| |version| |license|
 
-.. |travis| image:: https://travis-ci.org/dralshehri/saudi-id-validator.svg?branch=master
-    :alt: Travis-CI Build Status
+.. |travis| image:: https://img.shields.io/travis/dralshehri/saudi-id-validator.svg
+    :alt: Build Status
     :target: https://travis-ci.org/dralshehri/saudi-id-validator
 
-.. |codecov| image:: https://codecov.io/gh/dralshehri/saudi-id-validator/branch/master/graph/badge.svg
+.. |codecov| image:: https://img.shields.io/codecov/c/github/dralshehri/saudi-id-validator.svg
     :alt: Coverage Status
-    :target: https://codecov.io/gh/dralshehri/saudi-id-validator
+    :target: https://codecov.io/github/dralshehri/saudi-id-validator
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
+.. |supported| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/saudi-id-validator
 
 .. |version| image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
-    :alt: PyPI Package latest release
+    :alt: PyPI Package version
     :target: https://pypi.python.org/pypi/saudi-id-validator
+
+.. |license|
+   image:: https://img.shields.io/github/license/dralshehri/saudi-id-validator.svg
+   :alt: License
+   :target: https://github.com/dralshehri/saudi-id-validator/blob/master/LICENSE
 
 The validation formula is based on `Luhn algorithm`_ which is in wide use
 today by many governments to distinguish valid numbers from mistyped or
@@ -44,8 +49,9 @@ To validate an ID:
 
     from saudi_id_validator import validate
 
-    validate(1071724369)
-    # Returns False
+    v = validate(1071724369)
+    print(v)
+    # False
 
 The `validate` method will return a boolean (``True`` or ``False``) indicating whether
 ID is valid or not.
@@ -53,7 +59,9 @@ ID is valid or not.
 License
 -------
 
-This package is distributed under an MIT licence. See ``LICENSE.rst`` file.
+This package is distributed under an MIT licence. See `LICENSE`_ file.
+
+.. _LICENSE: https://github.com/dralshehri/saudi-id-validator/blob/master/LICENSE
 
 Change Log
 ----------
