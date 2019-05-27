@@ -6,9 +6,9 @@ both citizens and residents.
 
 |travis| |codecov| |supported| |version| |license|
 
-.. |travis| image:: https://img.shields.io/travis/dralshehri/saudi-id-validator.svg
+.. |travis| image:: https://img.shields.io/travis/com/dralshehri/saudi-id-validator.svg
    :alt: Build Status
-   :target: https://travis-ci.org/dralshehri/saudi-id-validator
+   :target: https://travis-ci.com/dralshehri/saudi-id-validator
 
 .. |codecov| image:: https://img.shields.io/codecov/c/github/dralshehri/saudi-id-validator.svg
    :alt: Coverage Status
