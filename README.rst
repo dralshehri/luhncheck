@@ -66,20 +66,23 @@ This package is distributed under an MIT licence. See `LICENSE`_ file.
 Change Log
 ----------
 
-**1.0.3 (2019-05-22)**
+**1.0.4**
+- Updated README.
+
+**1.0.3**
 
 - Updated usage example.
 - Updated README badges.
 - Removed LICENSE file extension.
 
-**1.0.2 (2018-11-18)**
+**1.0.2**
 
 - Improved README content.
 
-**1.0.1 (2018-12-06)**
+**1.0.1**
 
 - Fixed some typos in README file.
 
-**1.0.0 (2018-11-18)**
+**1.0.0**
 
 - First release.
