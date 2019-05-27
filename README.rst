@@ -67,6 +67,7 @@ Change Log
 ----------
 
 **1.0.4**
+
 - Updated README.
 
 **1.0.3**
