@@ -38,7 +38,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install saudi-id-validator
+    $ pip install -U saudi-id-validator
 
 Basic Usage
 -----------
@@ -59,12 +59,17 @@ ID is valid or not.
 License
 -------
 
-This package is distributed under an MIT licence. See `LICENSE`_ file.
+This package is distributed under an MIT license. See `LICENSE`_ file.
 
 .. _LICENSE: https://github.com/dralshehri/saudi-id-validator/blob/master/LICENSE
 
 Change Log
 ----------
+
+**v1.0.5**
+
+- Added params to docstrings
+- Fixed a typo in README.
 
 **v1.0.4**
 
