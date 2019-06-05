@@ -1,5 +1,9 @@
 def validate(id_number: int) -> bool:
-    """Validate the format and checksum of an SA identity number."""
+    """Validate format and checksum of the identity number.
+
+    :param id_number: Saudi Arabian identity number
+    :type id_number: int
+    """
 
     digits = [int(d) for d in str(id_number)]
 
