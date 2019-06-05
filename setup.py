@@ -6,7 +6,7 @@ readme = (here / "README.rst").read_text(encoding="utf-8")
 
 setup(
     name="saudi-id-validator",
-    version="1.0.4",
+    version="1.0.5",
     description="Validate ID numbers of Saudi Arabian identity cards",
     long_description=readme,
     long_description_content_type="text/x-rst",
