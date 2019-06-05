@@ -1,72 +1,69 @@
-.PHONY: clean clean-test clean-pyc clean-build help
-
+# Makefile config
+SHELL := /bin/bash
 .DEFAULT_GOAL := help
 
-define BROWSER_PYSCRIPT
-import os, webbrowser, sys
-try:
-	from urllib import pathname2url
-except:
-	from urllib.request import pathname2url
+# Python environment variables
+VENV=.venv
+PYTHON=$(VENV)/bin/python
 
-webbrowser.open("file://" + pathname2url(os.path.abspath(sys.argv[1])))
-endef
 
-export BROWSER_PYSCRIPT
+.PHONY: install ## Install development requirments
+install: clean
+	rm -fr .venv
+	python3 -m venv .venv --copies
+	$(PYTHON) -m pip install -U pip setuptools
+	$(PYTHON) -m pip install -U pytest pytest-cov black wheel twine
+	$(PYTHON) -m pip install -e .
 
-BROWSER := python -c "$$BROWSER_PYSCRIPT"
+.PHONY: test ## Run unit tests
+test: clean-test
+	$(PYTHON) -m pytest
 
-define PRINT_HELP_PYSCRIPT
-import re, sys
+.PHONY: test-cov ## Run tests with code coverage
+test-cov: clean-test
+	$(PYTHON) -m pytest --cov --cov-report term --cov-report html
+	$(PYTHON) -m webbrowser $(PWD)/htmlcov/index.html
 
-for line in sys.stdin:
-	match = re.match(r'^([a-zA-Z_-]+):.*?## (.*)$$', line)
-	if match:
-		target, help = match.groups()
-		print("%-20s %s" % (target, help))
-endef
-export PRINT_HELP_PYSCRIPT
+.PHONY: format ## Format code with Black
+format:
+	$(PYTHON) -m black -l 79 -t py35 src tests setup.py
 
-help:
-	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
+.PHONY: build ## Build and check the package
+build: clean
+	$(PYTHON) setup.py sdist bdist_wheel
+	$(PYTHON) -m twine check dist/*
 
-clean:  clean-test clean-pyc clean-build ## remove all artifacts
+.PHONY: deploy ## Deploy the package to PyPI
+deploy: build
+	$(PYTHON) -m twine upload dist/*
 
-clean-test: ## remove test and coverage artifacts
+.PHONY: clean ## Remove all artifacts
+clean: clean-test clean-pyc clean-build
+
+.PHONY: clean-test ## Remove tests artifacts
+clean-test:
 	rm -fr .pytest_cache
 	rm -f .coverage
 	rm -fr htmlcov
 
-clean-pyc: ## remove python file artifacts
+.PHONY: clean-pyc ## Remove python artifacts
+clean-pyc:
 	find . -name '*.pyc' -exec rm -f {} +
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 	find . -name '__pycache__' -exec rm -fr {} +
 
-clean-build: ## remove build artifacts
+.PHONY: clean-build ## Remove build artifacts
+clean-build:
 	rm -fr build
 	rm -fr dist
 	rm -fr .eggs
 	find . -name '*.egg-info' -exec rm -fr {} +
 	find . -name '*.egg' -exec rm -f {} +
 
-install: clean ## install dev requirments and project source
-	pip install -q -U pip setuptools pytest pytest-cov black wheel twine
-	pip install -q -e .
+.PHONY: help
+help:
+	@echo "Please use \`make <target>\` where <target> is one of:"
+	@grep -E '^\.PHONY: [a-zA-Z_-]+ .*?## .*$$' $(MAKEFILE_LIST) | \
+	awk 'BEGIN {FS = "(: |##)"}; {printf "\033[36m%-15s\033[0m %s\n", $$2, $$3}'
 
-format: ## format code with black
-	black -l 79 src tests setup.py
-
-test: ## run unit tests only
-	pytest
-
-coverage: ## check code coverage
-	pytest --cov --cov-report term --cov-report html
-	$(BROWSER) htmlcov/index.html
-
-build: clean ## build and check project
-	python setup.py sdist bdist_wheel
-	twine check dist/*
-
-deploy: build ## deploy project to pypi
-	twine upload dist/*
