@@ -24,6 +24,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Topic :: Utilities",
+        "Typing :: Typed"
     ],
     keywords="saudi government validator identity number",
     py_modules=[module.stem for module in here.glob("src/*.py")],
