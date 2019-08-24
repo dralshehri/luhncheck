@@ -49,12 +49,12 @@ To validate an ID:
 
     from saudi_id_validator import validate
 
-    v = validate(1071724369)
-    print(v)
+    is_valid = validate('1071724369')  # could also be an integer
+    print(is_valid)
     # False
 
-The `validate` method will return a boolean (``True`` or ``False``) indicating whether
-ID is valid or not.
+The `validate` method will return a boolean (``True`` or ``False``) indicating
+whether ID is valid or not.
 
 License
 -------
