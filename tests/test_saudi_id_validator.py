@@ -49,6 +49,8 @@ from saudi_id_validator import validate
         (108061268, False),
         (10727011784, False),
         (0, False),
+        ('1113080038', True),
+        ('2406361044', True),
     ],
 )
 def test_validate_id_numbers(test_input, expected):
