@@ -6,19 +6,23 @@ both citizens and residents.
 
 |travis| |codecov| |supported| |version| |license|
 
-.. |travis| image:: https://img.shields.io/travis/com/dralshehri/saudi-id-validator.svg
+.. |travis|
+   image:: https://img.shields.io/travis/com/dralshehri/saudi-id-validator.svg
    :alt: Build Status
    :target: https://travis-ci.com/dralshehri/saudi-id-validator
 
-.. |codecov| image:: https://img.shields.io/codecov/c/github/dralshehri/saudi-id-validator.svg
+.. |codecov|
+   image:: https://img.shields.io/codecov/c/github/dralshehri/saudi-id-validator.svg
    :alt: Coverage Status
    :target: https://codecov.io/github/dralshehri/saudi-id-validator
 
-.. |supported| image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
+.. |supported|
+   image:: https://img.shields.io/pypi/pyversions/saudi-id-validator.svg
    :alt: Supported versions
    :target: https://pypi.python.org/pypi/saudi-id-validator
 
-.. |version| image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
+.. |version|
+   image:: https://img.shields.io/pypi/v/saudi-id-validator.svg
    :alt: PyPI Package version
    :target: https://pypi.python.org/pypi/saudi-id-validator
 
@@ -66,9 +70,14 @@ This package is distributed under an MIT license. See `LICENSE`_ file.
 Change Log
 ----------
 
+**v1.0.6**
+
+- Fixed the package homepage URL (Thanks to `@ddimmich <https://github.com/ddimmich>`_).
+- Updated CI tests to include recent python versions.
+
 **v1.0.5**
 
-- Added params to docstrings
+- Added params to docstrings.
 - Fixed a typo in README.
 
 **v1.0.4**
