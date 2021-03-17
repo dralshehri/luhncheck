@@ -7,7 +7,7 @@ VENV=.venv
 PYTHON=$(VENV)/bin/python
 
 
-.PHONY: install ## Install development requirments
+.PHONY: install ## Install development requirements
 install: clean
 	rm -fr .venv
 	python3 -m venv .venv --copies
@@ -33,8 +33,8 @@ build: clean
 	$(PYTHON) setup.py sdist bdist_wheel
 	$(PYTHON) -m twine check dist/*
 
-.PHONY: deploy ## Deploy the package to PyPI
-deploy: build
+.PHONY: publish ## Publish the package to PyPI
+publish: build
 	$(PYTHON) -m twine upload dist/*
 
 .PHONY: clean ## Remove all artifacts
