@@ -10,7 +10,7 @@ setup(
     description="Validate ID numbers of Saudi Arabian identity cards",
     long_description=readme,
     long_description_content_type="text/x-rst",
-    url="https://github.com/dralshehri/sa-id-validator",
+    url="https://github.com/dralshehri/saudi-id-validator",
     author="Mohammed Alshehri",
     author_email="",
     license="MIT",
