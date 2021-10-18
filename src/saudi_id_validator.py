@@ -1,4 +1,11 @@
+import warnings
 from typing import Union
+
+warnings.warn(
+    "the 'saudi-id-validator' package is deprecated "
+    "and replaced by 'luhn-validator' package",
+    DeprecationWarning,
+)
 
 
 def validate(id_number: Union[int, str]) -> bool:
