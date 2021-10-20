@@ -1,8 +1,3 @@
-graft src
+include CHANGELOG.md
+include py.typed
 graft tests
-
-include pytest.ini
-include .coveragerc
-
-include README.rst
-include LICENSE

@@ -1,24 +1,11 @@
-import pathlib
+"""Setup.py entry point for supporting editable installs
 
-from setuptools import setup
+Configuration is handled by setuptools through setup.cfg
+https://setuptools.readthedocs.io/en/latest/setuptools.html
+"""
 
-here = pathlib.Path(__file__).parent
-readme = (here / "README.rst").read_text(encoding="utf-8")
+import setuptools
 
-setup(
-    name="saudi-id-validator",
-    version="1.0.7",
-    description="Validate ID numbers of Saudi Arabian identity cards",
-    long_description=readme,
-    long_description_content_type="text/x-rst",
-    url="",
-    author="Mohd Alshehri",
-    author_email="",
-    license="MIT",
-    classifiers=["Development Status :: 7 - Inactive"],
-    keywords="saudi government validator identity number",
-    py_modules=[module.stem for module in here.glob("src/*.py")],
-    package_dir={"": "src"},
-    include_package_data=True,
-    python_requires=">=3.5",
-)
+if __name__ == "__main__":
+    # Package name is added here for GitHub's dependency graph
+    setuptools.setup(name="luhn-validator")
