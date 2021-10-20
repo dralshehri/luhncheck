@@ -20,7 +20,7 @@ The Luhn algorithm or Luhn formula, also known as the "modulus 10" or "mod 10" a
 named after its creator, IBM scientist Hans Peter Luhn, is a simple checksum formula used
 to validate a variety of identification numbers, such as:
 
-- National Provider Identifier numbers in the United States.
+- US National Provider Identifier numbers.
 - Canadian Social Insurance Numbers.
 - Saudi Arabia National and Resident ID numbers.
 - South African ID numbers.
@@ -54,12 +54,16 @@ pip install luhn-validator
 ```pycon
 >>> from luhn_validator import validate
 
-# Simple usage
->>> validate(1071724369)
+# Simple validation
+>>> validate(1101798278)
+True
+
+# Validate number and check length
+>>> validate(1101798278, 9)
 False
 
-# Check also if number length is 10 and starts with either 1 or 2
->>> validate(10717243691, 10, [1, 2])
+# Validate number and check if length is 10 and starts with either 1 or 2
+>>> validate(1101798278, 10, [1, 2])
 True
 ```
 
@@ -79,7 +83,7 @@ Validate format and checksum of an identification number based on Luhn algorithm
 
 **Args:**
 
-- **`number`**: Identification number to validate
+- **`number`**: Identification number to validate.
 - **`length`**: How many digits the number must contain. (The default is `None`,
   which implies skipping the length check).
 - **`prefix`**: Exact digit(s) the number must start with. When a list of digits is
