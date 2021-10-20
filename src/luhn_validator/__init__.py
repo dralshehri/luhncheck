@@ -16,7 +16,7 @@ def validate(
     """Validate format and checksum of an identification number based on Luhn algorithm.
 
     Args:
-        number: Identification number to validate
+        number: Identification number to validate.
         length: How many digits the number must contain. (The default is ``None``,
             which implies skipping the length check).
         prefix: Exact digit(s) the number must start with. When a list of
@@ -24,7 +24,7 @@ def validate(
             which implies skipping the prefix check).
 
     Returns:
-        True when the number is valid, otherwise False
+        ``True`` when the number is valid, otherwise ``False``.
     """
 
     str_number = str(number)
