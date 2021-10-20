@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [tool.pytest.ini_options]
 minversion = "6.0"
 addopts = "-ra -q"
-testpaths = ["tests/unit"]
+testpaths = ["tests"]
 
 [tool.coverage.run]
 branch = true
@@ -27,8 +27,8 @@ profile = "black"
 [tool.taskipy.tasks]
 test_all = "pytest tests"
 test_cov = "pytest --cov --cov-report=term-missing --cov-fail-under=100"
-test_cov_html = "pytest --cov --cov-report=term --cov-report=html"
-test = "task test_cov tests"
+test_cov_html = "task test_cov --cov-report=html"
+test = "task test_cov"
 lint_flake8 = "flake8 src tests"
 lint_mypy = "mypy src"
 lint_isort = "isort --check-only src tests"
