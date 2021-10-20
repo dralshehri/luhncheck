@@ -54,15 +54,15 @@ pip install luhn-validator
 ```pycon
 >>> from luhn_validator import validate
 
-# Simple validation
+>>> # Simple validation
 >>> validate(1101798278)
 True
 
-# Validate number and check length
+>>> # Validate number and check length
 >>> validate(1101798278, 9)
 False
 
-# Validate number and check if length is 10 and starts with either 1 or 2
+>>> # Validate number and check if length is 10 and starts with either 1 or 2
 >>> validate(1101798278, 10, [1, 2])
 True
 ```
