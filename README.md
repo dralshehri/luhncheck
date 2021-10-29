@@ -1,6 +1,7 @@
 # luhn-validator
 
-A Python package to validate a variety of identification numbers using Luhn algorithm.
+A Python package to validate identification numbers using Luhn algorithm with additional optional
+checks.
 
 [![Checks Status](https://img.shields.io/github/workflow/status/dralshehri/luhn-validator/Checks/main?event=push&label=checks)][checks]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
@@ -54,15 +55,15 @@ pip install luhn-validator
 ```pycon
 >>> from luhn_validator import validate
 
->>> # Simple validation
+>>> # Simple checksum validation
 >>> validate(1101798278)
 True
 
->>> # Validate number and check length
+>>> # Additional check for length (9 digits)
 >>> validate(1101798278, 9)
 False
 
->>> # Validate number and check if length is 10 and starts with either 1 or 2
+>>> # Additional checks for length (10 digits) and prefix (either 1 or 2)
 >>> validate(1101798278, 10, [1, 2])
 True
 ```
