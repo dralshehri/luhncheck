@@ -1,4 +1,4 @@
-"""Simple validator for a variety of identification numbers based on Luhn algorithm.
+"""Simple validator for identification numbers based on Luhn algorithm.
 
 https://github.com/dralshehri/luhn-validator
 """
@@ -13,7 +13,7 @@ def validate(
     length: Optional[int] = None,
     prefix: Optional[Union[int, List[int]]] = None,
 ) -> bool:
-    """Validate format and checksum of an identification number based on Luhn algorithm.
+    """Validate checksum and format of an identification number based on Luhn algorithm.
 
     Args:
         number: Identification number to validate.
