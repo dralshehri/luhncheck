@@ -6,6 +6,12 @@ recommended by the Python Packaging Authority (PPA).
 [semantic versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#semantic-versioning-preferred
 [pre-release versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#pre-release-versioning
 
+## 1.1.2 (2022-01-19)
+
+- Improved type hints for `number` and `prefix` arguments.
+- Improved handling of numbers containing hyphens or spaces.
+- Updated documentation, tests, and usage examples.
+
 ## 1.1.1 (2021-10-29)
 
 - Improved docstrings and package metadata.
