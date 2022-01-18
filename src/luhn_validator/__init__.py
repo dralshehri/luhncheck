@@ -27,14 +27,15 @@ def validate(
         ``True`` when the number is valid, otherwise ``False``.
     """
 
-    str_number = str(number)
+    if isinstance(number, int):
+        number = str(number)
 
     # Strip hyphens and spaces
-    str_number = number.replace("-", "").replace(" ", "")
+    number = number.replace("-", "").replace(" ", "")
 
     # Check length
     if length is not None:
-        if len(str_number) != length:
+        if len(number) != length:
             return False
 
     # Check prefix
@@ -42,11 +43,11 @@ def validate(
         if not isinstance(prefix, list):
             prefix = [prefix]
         prefix_tuple = tuple(map(str, prefix))
-        if not str_number.startswith(prefix_tuple):
+        if not number.startswith(prefix_tuple):
             return False
 
     # Validate checksum
-    digits = list(map(int, str_number))
+    digits = list(map(int, number))
     odd_sum = sum(digits[-1::-2])
     even_sum = sum([sum(divmod(2 * d, 10)) for d in digits[-2::-2]])
     checksum = (odd_sum + even_sum) % 10
