@@ -29,6 +29,9 @@ def validate(
 
     str_number = str(number)
 
+    # Strip hyphens and spaces
+    str_number = number.replace("-", "").replace(" ", "")
+
     # Check length
     if length is not None:
         if len(str_number) != length:
