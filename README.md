@@ -1,7 +1,7 @@
 # luhn-validator
 
-A Python package to validate identification numbers using Luhn algorithm with additional optional
-checks.
+A Python package to validate identification numbers using Luhn algorithm with additional
+optional checks.
 
 [![Checks Status](https://img.shields.io/github/workflow/status/dralshehri/luhn-validator/Checks/main?event=push&label=checks)][checks]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
@@ -38,8 +38,9 @@ mistyped or otherwise incorrect numbers.
 
 ## Features
 
-- Simple API to validate numbers based on Luhn algorithm.
+- Simple API to validate numbers based on the Luhn algorithm.
 - Extended validation to cover number length and/or prefix(es).
+- Can validate numbers containing hyphens or spaces.
 - Works on Python 3.6+ with zero dependencies.
 - Thoroughly tested with 100% test coverage.
 
@@ -56,15 +57,23 @@ pip install luhn-validator
 >>> from luhn_validator import validate
 
 >>> # Simple checksum validation
->>> validate(1101798278)
+>>> validate("1101798278")
 True
 
 >>> # Additional check for length (9 digits)
->>> validate(1101798278, 9)
+>>> validate("1101798278", 9)
 False
 
 >>> # Additional checks for length (10 digits) and prefix (either 1 or 2)
->>> validate(1101798278, 10, [1, 2])
+>>> validate("1101798278", 10, [1, 2])
+True
+
+>>> # Simple checksum validation with hyphens and prefix of string type
+>>> validate("01-055102-109831-4", None, "01")
+True
+
+>>> # Simple checksum validation using integer type
+>>> validate(4146274478407735)
 True
 ```
 
@@ -74,9 +83,9 @@ True
 
 ```python
 validate(
-    number: int,
+    number: Union[str, int],
     length: Optional[int] = None,
-    prefix: Optional[Union[int, List[int]]] = None,
+    prefix: Optional[Union[Union[str, int], List[Union[str, int]]]] = None,
 ) -> bool
 ```
 
@@ -84,12 +93,12 @@ Validate format and checksum of an identification number based on Luhn algorithm
 
 **Args:**
 
-- **`number`**: Identification number to validate.
+- **`number`**: Identification number to validate (`str` or `int`).
 - **`length`**: How many digits the number must contain. (The default is `None`,
   which implies skipping the length check).
-- **`prefix`**: Exact digit(s) the number must start with. When a list of digits is
-  provided, one of the values must match. (The default is `None`, which implies
-  skipping the prefix check).
+- **`prefix`**: Exact digit(s) the number must start with (`str` or `int`). When a list
+  of digits is provided, one of the values must match. (The default is `None`, which
+  implies skipping the prefix check).
 
 **Returns:**
 
