@@ -3,7 +3,7 @@
 https://github.com/dralshehri/luhn-validator
 """
 
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 
 from typing import List, Optional, Union
 
