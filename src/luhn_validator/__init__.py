@@ -9,9 +9,9 @@ from typing import List, Optional, Union
 
 
 def validate(
-    number: int,
+    number: Union[str, int],
     length: Optional[int] = None,
-    prefix: Optional[Union[int, List[int]]] = None,
+    prefix: Optional[Union[Union[str, int], List[Union[str, int]]]] = None,
 ) -> bool:
     """Validate checksum and format of an identification number based on Luhn algorithm.
 
