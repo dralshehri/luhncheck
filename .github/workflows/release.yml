@@ -1,0 +1,46 @@
+name: Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  call-checks:
+    name: Checks
+    uses: ./.github/workflows/checks.yml
+  update-main:
+    name: Update main branch
+    needs: call-checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Merge tag branch
+        run: |
+          git checkout main
+          BRANCH=$(git branch -r --contains $GITHUB_REF_NAME)
+          git merge --ff-only $BRANCH
+          git push
+  publish-package:
+    name: Publish package to PyPI
+    needs: call-checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install build
+      - name: Build distributions
+        run: python -m build --sdist --wheel
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}

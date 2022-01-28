@@ -1,0 +1,29 @@
+name: Draft
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  create-draft:
+    name: Create draft release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Get release version
+        id: get-version
+        run: echo ::set-output name=version::${GITHUB_REF_NAME#v}
+      - name: Prepare release changes
+        env:
+          VERSION: ${{ steps.get-version.outputs.version }}
+          SOURCE: CHANGELOG.md
+          OUTPUT: ${{ github.ref_name }}-CHANGES.txt
+        run: cat $SOURCE | sed -n "/^## $VERSION/,/^##/p" | sed '1d;$d;/^$/d' > $OUTPUT
+      - name: Create draft release
+        uses: softprops/action-gh-release@v1
+        with:
+          body_path: ${{ github.ref_name }}-CHANGES.txt
+          draft: true
+          name: ${{ steps.get-version.outputs.version }}
