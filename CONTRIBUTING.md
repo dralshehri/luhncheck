@@ -6,7 +6,7 @@ will always be given.
 ## Reporting Issues
 
 An issue may be a simple comment, question, feature request, or bug report.
-When [reporting an issue](https://github.com/dralshehri/luhn-validator/issues/new), please
+When [reporting an issue](https://github.com/mhalshehri/luhn-validator/issues/new), please
 make sure to provide enough information to understand it.
 
 ## Changing Code
@@ -15,7 +15,7 @@ You may want to make some changes to the package codebase. For example, to fix a
 add a new feature, or to update documentation. You can do so by following these simple
 steps:
 
-1. Fork the [repository](https://github.com/dralshehri/luhn-validator) on GitHub.
+1. Fork the [repository](https://github.com/mhalshehri/luhn-validator) on GitHub.
 2. Clone your fork locally.
 3. Create a new branch.
 4. Make your code changes.
