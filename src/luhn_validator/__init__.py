@@ -13,14 +13,15 @@ def validate(
     length: Optional[int] = None,
     prefix: Optional[Union[Union[str, int], List[Union[str, int]]]] = None,
 ) -> bool:
-    """Validate checksum and format of an identification number based on the Luhn algorithm.
+    """Validate checksum and format of an identification number based on the
+    Luhn algorithm.
 
     Args:
         number: Identification number to validate.
-        length: How many digits the number must contain. (The default is ``None``,
-            which implies skipping the length check).
-        prefix: Exact digit(s) the number must start with. When a list of
-            digits is provided, one of the values must match. (The default is ``None``,
+        length: How many digits the number must contain. (The default is
+            ``None``, which implies skipping the length check).
+        prefix: Exact digit(s) the number must start with. When a list of digits
+            is provided, one of the values must match. (The default is ``None``,
             which implies skipping the prefix check).
 
     Returns:
