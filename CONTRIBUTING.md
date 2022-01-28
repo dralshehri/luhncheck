@@ -34,7 +34,7 @@ assumed that you have already created and activated a virtual environment with P
 The project and development dependencies can be installed using:
 
 ```shell
-pip install -r .reqs/dev.txt -e .
+pip install -r requirements-dev.txt && pip install -e .
 ```
 
 ### Formatting code:
