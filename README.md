@@ -3,17 +3,17 @@
 A Python package to validate identification numbers using Luhn algorithm with additional
 optional checks.
 
-[![Checks Status](https://img.shields.io/github/workflow/status/dralshehri/luhn-validator/Checks/main?event=push&label=checks)][checks]
+[![Checks Status](https://img.shields.io/github/workflow/status/mhalshehri/luhn-validator/Checks/main?event=push&label=checks)][checks]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
-[![Code Quality](https://img.shields.io/codefactor/grade/github/dralshehri/luhn-validator/main?&label=codefactor)][quality]
+[![Code Quality](https://img.shields.io/codefactor/grade/github/mhalshehri/luhn-validator/main?&label=codefactor)][quality]
 [![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
-[![Package License](https://img.shields.io/github/license/dralshehri/luhn-validator)][license]
+[![Package License](https://img.shields.io/github/license/mhalshehri/luhn-validator)][license]
 
-[checks]: https://github.com/dralshehri/luhn-validator/actions/workflows/checks.yml
-[coverage]: https://github.com/dralshehri/luhn-validator/actions/workflows/checks.yml
-[quality]: https://www.codefactor.io/repository/github/dralshehri/luhn-validator/overview/main
+[checks]: https://github.com/mhalshehri/luhn-validator/actions/workflows/checks.yml
+[coverage]: https://github.com/mhalshehri/luhn-validator/actions/workflows/checks.yml
+[quality]: https://www.codefactor.io/repository/github/mhalshehri/luhn-validator/overview/main
 [pypi-version]: https://pypi.python.org/pypi/luhn-validator
-[license]: https://github.com/dralshehri/luhn-validator/blob/main/LICENSE
+[license]: https://github.com/mhalshehri/luhn-validator/blob/main/LICENSE
 
 ## Overview
 
