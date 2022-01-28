@@ -1,3 +1,0 @@
-taskipy
--r quality.txt
--r tests.txt
