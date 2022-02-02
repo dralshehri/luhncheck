@@ -6,6 +6,12 @@ recommended by the Python Packaging Authority (PPA).
 [semantic versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#semantic-versioning-preferred
 [pre-release versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#pre-release-versioning
 
+## 1.1.3 (2022-01-31)
+
+- Changed type hints for `number` and `prefix` arguments to prefer strings.
+- Changed GitHub username to @mhalshehri and updated related links.
+- Updated development workflows and configurations.
+
 ## 1.1.2 (2022-01-19)
 
 - Improved type hints for `number` and `prefix` arguments.
