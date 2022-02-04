@@ -2,9 +2,6 @@
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.dev-dependencies]
-
-
 [tool.pytest.ini_options]
 minversion = "6.0"
 addopts = "-ra -q"
@@ -25,10 +22,17 @@ target-version = ["py36", "py37", "py38", "py39", "py310"]
 profile = "black"
 
 [tool.pylint.messages_control]
-disable = "C0114, C0115, C0116, C0326, C0330"
+disable = ["bad-whitespace", "bad-continuation"]  # recommended by Black
+
+[tool.pylint.reports]
+score = false
 
 [tool.pylint.format]
 max-line-length = 80
+expected-line-ending-format = "LF"
+
+[tool.pylint.master]
+ignore = ["tests"]
 
 [tool.taskipy.tasks]
 test_all = "pytest tests"
