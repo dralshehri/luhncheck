@@ -27,7 +27,7 @@ steps:
 
 The following are some commands you may need to use when coding on a local machine. It's
 assumed that you have already created and activated a virtual environment with Python
-3.9 or newer.
+3.10 or newer.
 
 ### Preparing for development:
 
