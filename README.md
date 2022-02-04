@@ -3,7 +3,7 @@
 A Python package to validate identification numbers using Luhn algorithm with
 additional optional checks.
 
-[![Checks Status](https://img.shields.io/github/workflow/status/mhalshehri/luhn-validator/Release)][build]
+[![Build Status](https://img.shields.io/github/workflow/status/mhalshehri/luhn-validator/Release)][build]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
 [![Code Quality](https://img.shields.io/codefactor/grade/github/mhalshehri/luhn-validator/main?&label=codefactor)][quality]
 [![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
