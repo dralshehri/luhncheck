@@ -50,3 +50,4 @@ jobs:
           body_path: ${{ github.ref_name }}-CHANGES.txt
           draft: true
           name: ${{ needs.get-version.outputs.version }}
+          token: ${{ secrets.PERSONAL_ACTION_TOKEN }}
