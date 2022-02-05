@@ -1,10 +1,12 @@
 # Changelog
 
-The format is based on [semantic versioning] and [pre-release versioning] schemes 
-recommended by the Python Packaging Authority (PPA).
+The format is based on [semantic versioning] and [pre-release versioning]
+schemes recommended by the Python Packaging Authority (PPA).
 
-[semantic versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#semantic-versioning-preferred
-[pre-release versioning]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#pre-release-versioning
+[semantic versioning]:
+  https://packaging.python.org/guides/distributing-packages-using-setuptools/#semantic-versioning-preferred
+[pre-release versioning]:
+  https://packaging.python.org/guides/distributing-packages-using-setuptools/#pre-release-versioning
 
 ## 1.1.4 (2022-02-05)
 
@@ -42,7 +44,8 @@ recommended by the Python Packaging Authority (PPA).
 
 ## 1.0.6 (2021-03-18)
 
-- Fixed the package homepage URL ([#2](https://github.com/mhalshehri/luhn-validator/pull/2)).
+- Fixed the package homepage URL
+  ([#2](https://github.com/mhalshehri/luhn-validator/pull/2)).
 - Updated CI tests to include recent python versions.
 
 ## 1.0.5 (2019-06-05)

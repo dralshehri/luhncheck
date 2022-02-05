@@ -1,7 +1,7 @@
 # luhn-validator
 
-A Python package to validate identification numbers using Luhn algorithm with
-additional optional checks.
+A Python package to validate identification numbers using the Luhn algorithm
+with additional optional checks.
 
 [![Build Status](https://img.shields.io/github/workflow/status/mhalshehri/luhn-validator/Release)][build]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
@@ -9,9 +9,12 @@ additional optional checks.
 [![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
 [![Package License](https://img.shields.io/github/license/mhalshehri/luhn-validator)][license]
 
-[build]: https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
-[coverage]: https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
-[quality]: https://www.codefactor.io/repository/github/mhalshehri/luhn-validator/overview/main
+[build]:
+  https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
+[coverage]:
+  https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
+[quality]:
+  https://www.codefactor.io/repository/github/mhalshehri/luhn-validator/overview/main
 [pypi-version]: https://pypi.python.org/pypi/luhn-validator
 [license]: https://github.com/mhalshehri/luhn-validator/blob/main/LICENSE
 
@@ -47,6 +50,7 @@ valid numbers from mistyped or otherwise incorrect numbers.
 ## Installation
 
 To install using `pip`, run:
+
 ```shell
 pip install luhn-validator
 ```
