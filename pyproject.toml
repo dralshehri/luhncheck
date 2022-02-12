@@ -32,17 +32,21 @@ max-line-length = 80
 expected-line-ending-format = "LF"
 
 [tool.pylint.master]
-ignore = ["tests"]
+py-version = "3.6"
+
+[tool.mypy]
+python_version = "3.6"
+strict = true
 
 [tool.taskipy.tasks]
-test_all = "pytest tests"
-test_cov = "pytest --cov --cov-report=term-missing --cov-fail-under=100"
-test_cov_html = "task test_cov --cov-report=html"
 test = "task test_cov"
+test_cov = "pytest --cov --cov-report=term-missing --cov-fail-under=100"
+test_cov_html = "pytest --cov --cov-report=term --cov-report=html"
+test_all = "pytest"
+lint = "task lint_isort && task lint_black && task lint_pylint && task lint_mypy"
 lint_isort = "isort --check-only src tests"
 lint_black = "black --check --quiet src tests"
-lint_pylint = "pylint src tests"
+lint_pylint = "pylint src"
 lint_mypy = "mypy src"
-lint = "task lint_isort && task lint_black && task lint_pylint && task lint_mypy"
 format = "isort src tests && black src tests"
-update = "pip install -U -r requirements-dev.txt"
+upgrade = "pip install -U -r requirements-dev.txt"
