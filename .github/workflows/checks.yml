@@ -35,7 +35,9 @@ jobs:
           cache: pip
           cache-dependency-path: ${{ env.REQUIREMENTS_FILE }}
       - name: Install dependencies
-        run: pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install -e .
+        run:
+          pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install
+          -e .
       - name: Check imports
         run: task lint_isort
       - name: Check formatting
@@ -50,7 +52,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -61,7 +63,9 @@ jobs:
           cache: pip
           cache-dependency-path: ${{ env.REQUIREMENTS_FILE }}
       - name: Install dependencies
-        run: pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install -e .
+        run:
+          pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install
+          -e .
       - name: Run tests
         run: task test_all
   code-coverage:
@@ -77,6 +81,8 @@ jobs:
           cache: pip
           cache-dependency-path: ${{ env.REQUIREMENTS_FILE }}
       - name: Install dependencies
-        run: pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install -e .
+        run:
+          pip install -U pip && pip install -r $REQUIREMENTS_FILE && pip install
+          -e .
       - name: Generate report
         run: task test_cov
