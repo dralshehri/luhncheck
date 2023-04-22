@@ -16,7 +16,7 @@ schemes recommended by the Python Packaging Authority (PPA).
 ## 1.1.3 (2022-02-02)
 
 - Changed type hints for `number` and `prefix` arguments to prefer strings.
-- Changed GitHub username to @mhalshehri and updated related links.
+- Changed GitHub username to @dralshehri and updated related links.
 - Updated development workflows and configurations.
 
 ## 1.1.2 (2022-01-19)
@@ -45,7 +45,7 @@ schemes recommended by the Python Packaging Authority (PPA).
 ## 1.0.6 (2021-03-18)
 
 - Fixed the package homepage URL
-  ([#2](https://github.com/mhalshehri/luhn-validator/pull/2)).
+  ([#2](https://github.com/dralshehri/luhn-validator/pull/2)).
 - Updated CI tests to include recent python versions.
 
 ## 1.0.5 (2019-06-05)

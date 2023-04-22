@@ -5,20 +5,20 @@ with additional optional checks.
 
 <!-- start badges -->
 
-[![Release Status](https://img.shields.io/github/actions/workflow/status/mhalshehri/luhn-validator/release.yml?branch=v1.1.4&label=release)][release]
+[![Release Status](https://img.shields.io/github/actions/workflow/status/dralshehri/luhn-validator/release.yml?branch=v1.1.4&label=release)][release]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
-[![Code Quality](https://img.shields.io/codefactor/grade/github/mhalshehri/luhn-validator/main?&label=codefactor)][quality]
+[![Code Quality](https://img.shields.io/codefactor/grade/github/dralshehri/luhn-validator/main?&label=codefactor)][quality]
 [![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
-[![Package License](https://img.shields.io/github/license/mhalshehri/luhn-validator)][license]
+[![Package License](https://img.shields.io/github/license/dralshehri/luhn-validator)][license]
 
 [release]:
-  https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
+  https://github.com/dralshehri/luhn-validator/actions/workflows/release.yml
 [coverage]:
-  https://github.com/mhalshehri/luhn-validator/actions/workflows/release.yml
+  https://github.com/dralshehri/luhn-validator/actions/workflows/release.yml
 [quality]:
-  https://www.codefactor.io/repository/github/mhalshehri/luhn-validator/overview/main
+  https://www.codefactor.io/repository/github/dralshehri/luhn-validator/overview/main
 [pypi-version]: https://pypi.python.org/pypi/luhn-validator
-[license]: https://github.com/mhalshehri/luhn-validator/blob/main/LICENSE
+[license]: https://github.com/dralshehri/luhn-validator/blob/main/LICENSE
 
 <!-- end badges -->
 
