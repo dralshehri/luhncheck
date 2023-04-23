@@ -1,6 +1,6 @@
 import pytest
 
-from luhn_validator import validate
+from luhn_validator import is_luhn
 
 
 @pytest.mark.parametrize(
@@ -18,7 +18,7 @@ from luhn_validator import validate
     ],
 )
 def test_number_validation(actual, expected):
-    assert validate(actual) == expected
+    assert is_luhn(actual) == expected
 
 
 @pytest.mark.parametrize(
@@ -64,7 +64,7 @@ def test_number_validation(actual, expected):
     ],
 )
 def test_number_validation_with_keyword_args(actual, expected):
-    assert validate(**actual) == expected
+    assert is_luhn(**actual) == expected
 
 
 @pytest.mark.parametrize(
@@ -110,4 +110,4 @@ def test_number_validation_with_keyword_args(actual, expected):
     ],
 )
 def test_number_validation_with_positional_args(actual, expected):
-    assert validate(*actual) == expected
+    assert is_luhn(*actual) == expected

@@ -8,7 +8,7 @@ __version__ = "1.1.4"
 from typing import List, Optional, Union
 
 
-def validate(
+def is_luhn(
     number: str,
     length: Optional[int] = None,
     prefix: Optional[Union[str, List[str]]] = None,
@@ -28,8 +28,8 @@ def validate(
         ``True`` when the number is valid, otherwise ``False``.
     """
 
-    if isinstance(number, int):
-        number = str(number)
+    # Make sure it is a string
+    number = str(number)
 
     # Strip hyphens and spaces
     number = number.replace("-", "").replace(" ", "")
