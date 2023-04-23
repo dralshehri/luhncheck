@@ -5,7 +5,7 @@ with additional optional checks.
 
 <!-- start badges -->
 
-[![Release Status](https://img.shields.io/github/actions/workflow/status/dralshehri/luhn-validator/release.yml?branch=v1.1.4&label=release)][release]
+[![Release Status](https://img.shields.io/github/actions/workflow/status/dralshehri/luhn-validator/release.yml?label=release)][release]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
 [![Code Quality](https://img.shields.io/codefactor/grade/github/dralshehri/luhn-validator/main?&label=codefactor)][quality]
 [![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
