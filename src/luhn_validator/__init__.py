@@ -50,7 +50,7 @@ def validate(
     # Validate checksum
     digits = list(map(int, number))
     odd_sum = sum(digits[-1::-2])
-    even_sum = sum([sum(divmod(2 * d, 10)) for d in digits[-2::-2]])
+    even_sum = sum(sum(divmod(2 * d, 10)) for d in digits[-2::-2])
     checksum = (odd_sum + even_sum) % 10
     result = bool(checksum == 0)
 
