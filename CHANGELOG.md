@@ -6,6 +6,7 @@ The versioning scheme is compliant with the [PEP 440] specification.
 
 ## Unreleased
 
+- Renamed the `validate` function to `is_luhn`.
 - Dropped support for Python 3.6 and added support for Python 3.11.
 - Fixed location of type-checking marker file.
 - Improved performance by using a generator for `sum` function.
