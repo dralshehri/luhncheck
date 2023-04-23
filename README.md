@@ -40,13 +40,13 @@ checksum formula used to validate a variety of identification numbers, such as:
 
 The algorithm is in the public domain and is in wide use today. It was designed
 to protect against accidental errors. Most credit cards and many government
-identification numbers use the algorithm as a simple method of distinguishing
-valid numbers from mistyped or otherwise incorrect numbers.
+identification numbers use the algorithm to distinguish valid numbers from
+mistyped or otherwise incorrect numbers.
 
 ## Features
 
 - Simple API to validate numbers based on the Luhn algorithm.
-- Extended validation to cover number length and/or prefix(es).
+- Extended validation to cover number length and prefix(es).
 - Can validate numbers containing hyphens or spaces.
 - Works on Python 3.7+ with zero dependencies.
 - Thoroughly tested with 100% test coverage.
@@ -62,22 +62,22 @@ pip install luhn-validator
 ## Usage Examples
 
 ```pycon
->>> from luhn_validator import validate
+>>> from luhn_validator import is_luhn
 
 >>> # Simple checksum validation
->>> validate("1101798278")
+>>> is_luhn("1101798278")
 True
 
 >>> # Additional check for length (9 digits)
->>> validate("1101798278", 9)
+>>> is_luhn("1101798278", 9)
 False
 
 >>> # Additional checks for prefix (either 1 or 2)
->>> validate("1101798278", 10, ["1", "2"])
+>>> is_luhn("1101798278", 10, ["1", "2"])
 True
 
 >>> # Validate numbers containing hyphens
->>> validate("01-055102-109831-4", None, "01")
+>>> is_luhn("01-055102-109831-4", None, "01")
 True
 ```
 
@@ -86,7 +86,7 @@ True
 ### <kbd>function</kbd> `validate`
 
 ```python
-validate(
+is_luhn(
     number: str,
     length: int | None = None,
     prefix: str | list[str] | None = None
@@ -107,7 +107,7 @@ algorithm.
 
 **Returns:**
 
-- `True` when the number is valid, otherwise `False`.
+- `True` when the number is valid; otherwise, `False`.
 
 ## License
 
