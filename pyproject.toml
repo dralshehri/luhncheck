@@ -9,7 +9,7 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["luhn_validator"]
+source = ["luhncheck"]
 
 [tool.coverage.paths]
 source = ["src"]

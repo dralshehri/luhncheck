@@ -21,7 +21,7 @@ readme_content_no_badges = re.sub(
 # Package name is added here for GitHub's dependency graph
 # Also, a cleaner version of the long description is added
 setuptools.setup(
-    name="luhn-validator",
+    name="luhncheck",
     long_description=readme_content_no_badges,
     long_description_content_type="text/markdown",
 )
