@@ -1,24 +1,23 @@
-# luhn-validator
+# luhncheck
 
 A Python package to validate identification numbers using the Luhn algorithm
 with additional optional checks.
 
 <!-- start badges -->
 
-[![Release Status](https://img.shields.io/github/actions/workflow/status/dralshehri/luhn-validator/release.yml?label=release)][release]
+[![Release Status](https://img.shields.io/github/actions/workflow/status/dralshehri/luhncheck/release.yml?label=release)][release]
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-success)][coverage]
-[![Code Quality](https://img.shields.io/codefactor/grade/github/dralshehri/luhn-validator/main?&label=codefactor)][quality]
-[![PyPI Version](https://img.shields.io/pypi/v/luhn-validator)][pypi-version]
-[![Package License](https://img.shields.io/github/license/dralshehri/luhn-validator)][license]
+[![Code Quality](https://img.shields.io/codefactor/grade/github/dralshehri/luhncheck/main?&label=codefactor)][quality]
+[![PyPI Version](https://img.shields.io/pypi/v/luhncheck)][pypi-version]
+[![Package License](https://img.shields.io/github/license/dralshehri/luhncheck)][license]
 
-[release]:
-  https://github.com/dralshehri/luhn-validator/actions/workflows/release.yml
+[release]: https://github.com/dralshehri/luhncheck/actions/workflows/release.yml
 [coverage]:
-  https://github.com/dralshehri/luhn-validator/actions/workflows/release.yml
+  https://github.com/dralshehri/luhncheck/actions/workflows/release.yml
 [quality]:
-  https://www.codefactor.io/repository/github/dralshehri/luhn-validator/overview/main
-[pypi-version]: https://pypi.python.org/pypi/luhn-validator
-[license]: https://github.com/dralshehri/luhn-validator/blob/main/LICENSE
+  https://www.codefactor.io/repository/github/dralshehri/luhncheck/overview/main
+[pypi-version]: https://pypi.python.org/pypi/luhncheck
+[license]: https://github.com/dralshehri/luhncheck/blob/main/LICENSE
 
 <!-- end badges -->
 
@@ -56,13 +55,13 @@ mistyped or otherwise incorrect numbers.
 To install using `pip`, run:
 
 ```shell
-pip install luhn-validator
+pip install luhncheck
 ```
 
 ## Usage Examples
 
 ```pycon
->>> from luhn_validator import is_luhn
+>>> from luhncheck import is_luhn
 
 >>> # Simple checksum validation
 >>> is_luhn("1101798278")
@@ -83,7 +82,7 @@ True
 
 ## API Reference
 
-### <kbd>function</kbd> `validate`
+### <kbd>function</kbd> `is_luhn`
 
 ```python
 is_luhn(

@@ -6,6 +6,7 @@ The versioning scheme is compliant with the [PEP 440] specification.
 
 ## Unreleased
 
+- Renamed the package to `luhncheck` and deprecated the old name.
 - Renamed the `validate` function to `is_luhn`.
 - Dropped support for Python 3.6 and added support for Python 3.11.
 - Fixed location of type-checking marker file.
@@ -38,7 +39,7 @@ The versioning scheme is compliant with the [PEP 440] specification.
 
 ## 1.1.0 (2021-10-20)
 
-- Renamed the project to `luhn-validator` for more generic use.
+- Renamed the project to `luhncheck` for more generic use.
 - Changed `number` parameter of `validate` function to accept integers only.
 - Added `length` and `prefix` parameters to `validate` function.
 - Updated documentation and tests.
@@ -53,7 +54,7 @@ The versioning scheme is compliant with the [PEP 440] specification.
 - Fixed the package homepage URL. ([#2])
 - Updated CI tests to include recent Python versions.
 
-[#2]: https://github.com/dralshehri/luhn-validator/pull/2
+[#2]: https://github.com/dralshehri/luhncheck/pull/2
 
 ## 1.0.5 (2019-06-05)
 
