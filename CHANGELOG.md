@@ -4,7 +4,7 @@ The versioning scheme is compliant with the [PEP 440] specification.
 
 [PEP 440]: https://peps.python.org/pep-0440/#public-version-identifiers
 
-## Unreleased
+## 2.0.0 (2023-04-24)
 
 - Renamed the package to `luhncheck` and deprecated the old name.
 - Renamed the `validate` function to `is_luhn`.
