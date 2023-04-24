@@ -1,6 +1,6 @@
 """Simple validator for identification numbers based on the Luhn algorithm.
 
-https://github.com/dralshehri/luhn-validator
+https://github.com/dralshehri/luhncheck
 """
 
 __version__ = "1.1.4"
