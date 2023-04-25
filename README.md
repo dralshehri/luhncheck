@@ -1,4 +1,4 @@
-# luhncheck
+# LuhnCheck
 
 A Python package to validate identification numbers using the Luhn algorithm
 with additional optional checks.
