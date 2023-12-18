@@ -3,7 +3,7 @@
 https://github.com/dralshehri/luhncheck
 """
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 from typing import List, Optional, Union
 
