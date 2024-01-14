@@ -47,7 +47,7 @@ mistyped or otherwise incorrect numbers.
 - Simple API to validate numbers based on the Luhn algorithm.
 - Extended validation to cover number length and prefix(es).
 - Can validate numbers containing hyphens or spaces.
-- Works on Python 3.7+ with zero dependencies.
+- Works on Python 3.8+ with zero dependencies.
 - Thoroughly tested with 100% test coverage.
 
 ## Installation
