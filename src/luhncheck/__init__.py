@@ -28,30 +28,24 @@ def is_luhn(
         ``True`` when the number is valid, otherwise ``False``.
     """
 
-    # Make sure it is a string
-    number = str(number)
-
     # Strip hyphens and spaces
     number = number.replace("-", "").replace(" ", "")
 
+    # Check if digits
+    if not number.isdigit():
+        return False
+
     # Check length
-    if length is not None:
-        if len(number) != length:
-            return False
+    if length is not None and len(number) != length:
+        return False
 
     # Check prefix
     if prefix is not None:
-        if not isinstance(prefix, list):
-            prefix = [prefix]
-        prefix_tuple = tuple(map(str, prefix))
-        if not number.startswith(prefix_tuple):
+        prefix = [prefix] if isinstance(prefix, str) else prefix
+        if not number.startswith(tuple(map(str, prefix))):
             return False
 
     # Validate checksum
-    digits = list(map(int, number))
-    odd_sum = sum(digits[-1::-2])
-    even_sum = sum(sum(divmod(2 * d, 10)) for d in digits[-2::-2])
-    checksum = (odd_sum + even_sum) % 10
-    result = bool(checksum == 0)
-
-    return result
+    digits = [*map(int, number)]
+    digits[-2::-2] = [sum(divmod(2 * d, 10)) for d in digits[-2::-2]]
+    return sum(digits) % 10 == 0

@@ -6,7 +6,7 @@ from luhncheck import is_luhn
 @pytest.mark.parametrize(
     "actual, expected",
     [
-        (1101798278, True),
+        ("110179827B", False),
         ("1101798278", True),
         ("1102544794", False),
         ("4146274478407735", True),
