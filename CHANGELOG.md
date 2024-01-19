@@ -4,6 +4,12 @@ The versioning scheme is compliant with the [PEP 440] specification.
 
 [PEP 440]: https://peps.python.org/pep-0440/#public-version-identifiers
 
+## 2.2.0 (2024-01-19)
+
+- Optimized the code for better speed.
+- Added more tests.
+- Fixed typos in the documentation.
+
 ## 2.1.0 (2023-12-18)
 
 - Dropped support for Python 3.7 and added support for Python 3.12.
