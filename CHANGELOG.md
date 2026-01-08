@@ -1,94 +1,102 @@
 # Changelog
 
-The versioning scheme is compliant with the [PEP 440] specification.
+This project follows [PEP 440](https://peps.python.org/pep-0440/) semantic versioning:
 
-[PEP 440]: https://peps.python.org/pep-0440/#public-version-identifiers
+- **MAJOR** (e.g., `2.2.0` → `3.0.0`) — Breaking changes that require code updates (API changes, removed features, behavior changes)
+- **MINOR** (e.g., `2.2.0` → `2.3.0`) — New features that are backward compatible
+- **PATCH** (e.g., `2.2.0` → `2.2.1`) — Bug fixes and small improvements
 
-## 2.2.0 (2024-01-19)
+## Unreleased
 
-- Optimized the code for better speed.
-- Added more tests.
-- Fixed typos in the documentation.
+- Dropped support for Python 3.8 and 3.9, and added support for Python 3.13 and 3.14
+- Moved package version to project metadata
+- Changed type hints to modern syntax
+- Changed copyright notice to a simplified format
+- Updated development tools and workflows
 
-## 2.1.0 (2023-12-18)
+## 2.2.0 - 2024-01-19
 
-- Dropped support for Python 3.7 and added support for Python 3.12.
+- Optimized the code for better speed
+- Added more tests
+- Fixed typos in the documentation
 
-## 2.0.0 (2023-04-24)
+## 2.1.0 - 2023-12-18
 
-- Renamed the package to `luhncheck` and deprecated the old name.
-- Renamed the `validate` function to `is_luhn`.
-- Dropped support for Python 3.6 and added support for Python 3.11.
-- Fixed location of type-checking marker file.
-- Improved performance by using a generator for `sum` function.
-- Removed badges from the package description.
-- Updated development configurations and GitHub actions.
-- Changed GitHub username back to @dralshehri and updated related links.
+- Dropped support for Python 3.7 and added support for Python 3.12
 
-## 1.1.4 (2022-02-05)
+## 2.0.0 - 2023-04-24
 
-- Fixed some typos.
-- Updated linting configurations.
+- Renamed the package to `luhncheck` and deprecated the old name
+- Renamed the `validate` function to `is_luhn`
+- Dropped support for Python 3.6 and added support for Python 3.11
+- Fixed location of type-checking marker file
+- Improved performance by using a generator for `sum` function
+- Removed badges from the package description
+- Updated development configurations and GitHub actions
+- Changed GitHub username back to @dralshehri and updated related links
 
-## 1.1.3 (2022-02-02)
+## 1.1.4 - 2022-02-05
 
-- Changed type hints for `number` and `prefix` arguments to prefer strings.
-- Changed GitHub username to @mhalshehri and updated related links.
-- Updated development workflows and configurations.
+- Fixed some typos
+- Updated linting configurations
 
-## 1.1.2 (2022-01-19)
+## 1.1.3 - 2022-02-02
 
-- Improved type hints for `number` and `prefix` arguments.
-- Improved handling of numbers containing hyphens or spaces.
-- Updated documentation, tests, and usage examples.
+- Changed type hints for `number` and `prefix` arguments to prefer strings
+- Changed GitHub username to @mhalshehri and updated related links
+- Updated development workflows and configurations
 
-## 1.1.1 (2021-10-29)
+## 1.1.2 - 2022-01-19
 
-- Improved docstrings and package metadata.
-- Improved usage examples.
+- Improved type hints for `number` and `prefix` arguments
+- Improved handling of numbers containing hyphens or spaces
+- Updated documentation, tests, and usage examples
 
-## 1.1.0 (2021-10-20)
+## 1.1.1 - 2021-10-29
 
-- Renamed the project to `luhncheck` for more generic use.
-- Changed `number` parameter of `validate` function to accept integers only.
-- Added `length` and `prefix` parameters to `validate` function.
-- Updated documentation and tests.
-- Updated packaging configuration files and local development workflow.
+- Improved docstrings and package metadata
+- Improved usage examples
 
-## 1.0.7 (2021-10-18)
+## 1.1.0 - 2021-10-20
 
-- Deprecated `saudi-id-validator` in favor of the new name.
+- Renamed the project to `luhncheck` for more generic use
+- Changed `number` parameter of `validate` function to accept integers only
+- Added `length` and `prefix` parameters to `validate` function
+- Updated documentation and tests
+- Updated packaging configuration files and local development workflow
 
-## 1.0.6 (2021-03-18)
+## 1.0.7 - 2021-10-18
 
-- Fixed the package homepage URL. ([#2])
-- Updated CI tests to include recent Python versions.
+- Deprecated `saudi-id-validator` in favor of the new name
 
-[#2]: https://github.com/dralshehri/luhncheck/pull/2
+## 1.0.6 - 2021-03-18
 
-## 1.0.5 (2019-06-05)
+- Fixed the package homepage URL ([#2](https://github.com/dralshehri/luhncheck/pull/2))
+- Updated CI tests to include recent Python versions
 
-- Added params to docstrings.
-- Fixed a typo in README.
+## 1.0.5 - 2019-06-05
 
-## 1.0.4 (2019-05-27)
+- Added params to docstrings
+- Fixed a typo in README
 
-- Updated README.
+## 1.0.4 - 2019-05-27
 
-## 1.0.3 (2019-05-22)
+- Updated README
 
-- Updated usage example.
-- Updated README badges.
-- Removed LICENSE file extension.
+## 1.0.3 - 2019-05-22
 
-## 1.0.2 (2018-12-06)
+- Updated usage example
+- Updated README badges
+- Removed LICENSE file extension
 
-- Improved README content.
+## 1.0.2 - 2018-12-06
 
-## 1.0.1 (2018-11-18)
+- Improved README content
 
-- Fixed some typos in README file.
+## 1.0.1 - 2018-11-18
 
-## 1.0.0 (2018-11-18)
+- Fixed some typos in README file
 
-- First release.
+## 1.0.0 - 2018-11-18
+
+- First release
