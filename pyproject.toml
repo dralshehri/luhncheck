@@ -1,6 +1,6 @@
 [project]
 name = "luhncheck"
-version = "2.2.0"
+version = "2.3.0"
 description = "Simple validator for identification numbers based on the Luhn algorithm"
 dynamic = ["readme"]
 authors = [{ name = "Mohammed Alshehri" }]

@@ -6,7 +6,7 @@ This project follows [PEP 440](https://peps.python.org/pep-0440/) semantic versi
 - **MINOR** (e.g., `2.2.0` → `2.3.0`) — New features that are backward compatible
 - **PATCH** (e.g., `2.2.0` → `2.2.1`) — Bug fixes and small improvements
 
-## Unreleased
+## 2.3.0 - 2026-01-08
 
 - Dropped support for Python 3.8 and 3.9, and added support for Python 3.13 and 3.14
 - Moved package version to project metadata
