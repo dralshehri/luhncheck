@@ -4,7 +4,7 @@ from luhncheck import is_luhn
 
 
 @pytest.mark.parametrize(
-    "actual, expected",
+    ("actual", "expected"),
     [
         ("110179827B", False),
         ("1101798278", True),
@@ -22,7 +22,7 @@ def test_number_validation(actual, expected):
 
 
 @pytest.mark.parametrize(
-    "actual, expected",
+    ("actual", "expected"),
     [
         ({"number": "1101798278", "length": 10}, True),
         ({"number": "1-1017-9827-8", "length": 10}, True),
@@ -89,7 +89,7 @@ def test_number_validation_with_keyword_args(actual, expected):
 
 
 @pytest.mark.parametrize(
-    "actual, expected",
+    ("actual", "expected"),
     [
         (("1101798278", 10), True),
         (("1-1017-9827-8", 10), True),
