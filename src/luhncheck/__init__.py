@@ -3,17 +3,17 @@
 https://github.com/dralshehri/luhncheck
 """
 
-
-from typing import List, Optional, Union
+__all__ = ["is_luhn"]
 
 
 def is_luhn(
     number: str,
-    length: Optional[int] = None,
-    prefix: Optional[Union[str, List[str]]] = None,
+    length: int | None = None,
+    prefix: str | list[str] | None = None,
 ) -> bool:
-    """Validate checksum and format of an identification number based on the
-    Luhn algorithm.
+    """Validate checksum and format of an identification number.
+
+    Uses the Luhn algorithm to validate identification numbers.
 
     Args:
         number: Identification number to validate.
@@ -26,7 +26,6 @@ def is_luhn(
     Returns:
         ``True`` when the number is valid, otherwise ``False``.
     """
-
     # Strip hyphens and spaces
     number = number.replace("-", "").replace(" ", "")
 
